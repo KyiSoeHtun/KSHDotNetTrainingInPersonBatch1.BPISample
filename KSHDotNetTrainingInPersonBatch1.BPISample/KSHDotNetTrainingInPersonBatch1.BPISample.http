@@ -1,0 +1,6 @@
+@KSHDotNetTrainingInPersonBatch1.BPISample_HostAddress = http://localhost:5247
+
+GET {{KSHDotNetTrainingInPersonBatch1.BPISample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
