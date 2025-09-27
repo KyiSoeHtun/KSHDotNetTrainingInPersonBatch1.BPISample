@@ -9,15 +9,8 @@ namespace KSHDotNetTrainingInPersonBatch1.BPISample.Controllers
     [ApiController]
     public class BirdsController : ControllerBase
     {
-        [HttpGet("Tbl_Bird")]
+        [HttpGet()]
         public IActionResult Get()
-        {
-            var result = GetBirds();
-            return Ok(result.Tbl_Bird);
-        }
-
-        [HttpGet("Bird_list")]
-        public IActionResult GetBirdList()
         {
             var result = GetBirds();
             return Ok(result.Tbl_Bird);

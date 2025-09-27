@@ -32,7 +32,7 @@ namespace KSHDotNetTrainingInPersonBatch1.BPISample.WindowsForm
             if (response.IsSuccessStatusCode)
             {
                 string json = response.Content.ReadAsStringAsync().Result;
-                var result = JsonConvert.DeserializeObject<BirdsResponseModel>(json);
+                var result = JsonConvert.DeserializeObject<Tbl_Bird[]>(json);
                 dataGridView1.AutoGenerateColumns = false;
                 dataGridView1.DataSource = result;
             }
